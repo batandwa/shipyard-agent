@@ -1,0 +1,7 @@
+---
+# vars file for shipyard-agent
+
+host: localhost
+socket_file: /var/run/docker.sock
+port: 4500
+image: shipyard/agent

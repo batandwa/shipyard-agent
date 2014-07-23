@@ -1,0 +1,5 @@
+---
+# tasks file for shipyard-agent
+
+- name: Run shipyard-agent docker container
+  command: docker run -i -t -v {{ socket_file }}:/docker.sock -e IP=`ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1;}'` -e URL=http://{{ host }}:{{ shipyard_port }} -p {{ port }}:{{ port }} {{ image }}
