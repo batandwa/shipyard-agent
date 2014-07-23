@@ -1,7 +1,7 @@
-Role Name
-========
+Shipyard Agent
+==============
 
-A brief description of the role goes here.
+A Ansible Galaxy role that starts a Shipyard Agent Docker container
 
 Requirements
 ------------
